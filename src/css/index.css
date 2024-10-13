@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #091428 ;
+}
+
+
+/* Diseño del titulo */
+
+header{
+    width: 100%;
+    height: 30%;
+    border: 10px solid #C89B3C;
+    background-color: #010A13;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+header img {
+    width: 400px;
+    color: #D4AF37;
+    margin-left: 39.5%;
+    margin-top: 1%;
+}
+
+
+/* Diseño de las cartas de los champ */
+.card {
+    border: 10px solid  #C89B3C ;
+    background-color: #F0E6D2;
+    color:  #32281E;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 325px;
+    
+}
+
+.card h2{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10%;
+       
+}
+
+.card p:first-of-type{
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    
+    
+
+}
+
+.card p:nth-of-type(2) {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+
+.card:hover{
+    background-color:#79D6FF ;
+    transform: scale(1.1)
+}
+
+
+/* Formato de las columnas*/
+
+#card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px; 
+    margin-left: 42.5%;
+}
+
+
+/* Diseño de los botones */
+
+
+.buttons{
+    width: 100%;
+    height: 100%;
+    margin-left: 35.8%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    
+}
+
+.buttons button{
+    margin-left: 1.8%;
+    height: 50px;
+    width: 100px;
+    color: aliceblue;
+    background-color: #005A82;
+}
+
+.buttons button:hover{
+    background-color:  #0397AB ;
+
+
+}
+
+/*Edicion del pop*/
+
+.modal{
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    margin-bottom: 50%;
+}
+
+.championModal{
+    background-color: white;
+    width: 95%;
+    height: 80%;    
+    margin-left: 3%;
+    align-items: center; 
+    align-content: center;
+    border:  20px solid  #C89B3C ;
+    position: absolute;
+    bottom: 14.5%;
+    border-radius: 20px;
+    
+
+}
+.championModal img{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 15%;
+    right: 30%;
+
+}
+
+#close{
+    position: absolute;
+    right:2.4%;
+    bottom:90% ;
+    width: 70px;
+    height: 50px;
+    font-size: 50px;
+    color:  #C89B3C ;
+    background-color:  white ;
+    border: hidden;
+    border-radius: 10px;
+
+}
+
+#close:hover{
+    transform: scale(2,2);
+}
+
+#close img{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    right: 10%;
+}
+
+#namepop{
+    position: absolute;
+    right:300px;
+    width: 40%;
+    left: 30%;
+    top: 3%;
+    font-size: 60px;
+    color: #C89B3C ;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+#prev{
+    width: 4%;
+    height: 7%;
+    position: absolute;
+    top: 270px ;
+    left: 23.4%;
+    z-index: 10;
+    border: hidden;
+    background-color: white;
+    color: #C89B3C ;
+    font-size: 50px;
+
+}
+
+
+/* #prev img{
+    width: 70%;
+    height: 70%;
+} */
+
+#prev:hover{
+    transform: scale(2,2);
+    
+}
+
+#next{
+    width: 4%;
+    height: 7%;
+    position: absolute;
+    top: 270px ;
+    left: 74%;
+    z-index: 10;
+    border: hidden;
+    background-color: white;
+    color: #C89B3C ;
+    font-size: 50px;
+}
+
+#next:hover{
+    transform: scale(2,2);
+    
+}
+
+/* #next img{
+    width: 70%;
+    height: 70%;
+} */
+
+.championModal p{
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    top: 60%;
+    font-size: 50px;
+    align-items: center;
+    align-items: center;
+    margin-left: 5%;
+    color:  #463714;
+    
+}
+
